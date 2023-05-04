@@ -46,7 +46,7 @@ export default function Navbar() {
               priority
             />
           </Link>
-          <h2 className=" hidden xs:block">Md. kabir uddin</h2>
+          <h2 className=" hidden xs:block ml-1">Md. kabir uddin</h2>
         </div>
         {/* likn section */}
         <div className="">

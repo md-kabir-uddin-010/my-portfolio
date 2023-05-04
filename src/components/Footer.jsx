@@ -27,65 +27,69 @@ export default function Footer() {
       {/* icon section */}
       <div className="">
         {/* social icno */}
-        <div className=" mb-4 flex items-center gap-5 justify-center flex-wrap">
-          {social_link?.map((link) => {
-            if (link?.name === "discord") {
-              return (
-                <Tooltip key={link?.id} message={"copy username"}>
-                  <button
-                    onClick={() => {
-                      navigator.clipboard.writeText(link?.href);
-                      succesMessage(link?.name + " user name copied");
-                    }}
-                    className=" overflow-hidden   transition-all w-10 h-10 bg-[#1F2044] hover:bg-[#ffb400] px-1 py-1 rounded-md flex items-center justify-center font-bold"
-                  >
-                    <Image
-                      src={link?.icon}
-                      alt={link?.name}
-                      width="auto"
-                      height="auto"
-                      priority
-                    />
-                  </button>
-                </Tooltip>
-              );
-            } else {
-              return (
-                <Tooltip key={link?.id} message={link?.name}>
-                  <Link
-                    href={link?.href}
-                    target="_blank"
-                    className=" overflow-hidden   transition-all w-10 h-10 bg-[#1F2044] hover:bg-[#ffb400] px-1 py-1 rounded-md flex items-center justify-center font-bold"
-                  >
-                    <Image
-                      src={link?.icon}
-                      alt={link?.name}
-                      width="auto"
-                      height="auto"
-                      priority
-                    />
-                  </Link>
-                </Tooltip>
-              );
-            }
-          })}
-          {marketplace_link?.map((link) => (
-            <Tooltip key={link?.id} message={link?.name}>
-              <Link
-                href={link?.href}
-                target="_blank"
-                className="   overflow-hidden hover:bg-[#ffb400] transition-all w-20 h-10 px-1 bg-slate-100 rounded-md flex items-center justify-center font-bold"
-              >
-                <Image
-                  src={link?.icon}
-                  alt={link?.name}
-                  width="auto"
-                  height="auto"
-                  priority
-                />
-              </Link>
-            </Tooltip>
-          ))}
+        <div className=" mb-4 flex items-center gap-5 justify-center flex-col md:flex-row">
+          <div className=" flex items-center flex-col xs:flex-row">
+            {social_link?.map((link) => {
+              if (link?.name === "discord") {
+                return (
+                  <Tooltip key={link?.id} message={"copy username"}>
+                    <button
+                      onClick={() => {
+                        navigator.clipboard.writeText(link?.href);
+                        succesMessage(link?.name + " user name copied");
+                      }}
+                      className=" m-3 overflow-hidden   transition-all w-10 h-10 bg-[#1F2044] hover:bg-[#ffb400] px-1 py-1 rounded-md flex items-center justify-center font-bold"
+                    >
+                      <Image
+                        src={link?.icon}
+                        alt={link?.name}
+                        width="auto"
+                        height="auto"
+                        priority
+                      />
+                    </button>
+                  </Tooltip>
+                );
+              } else {
+                return (
+                  <Tooltip key={link?.id} message={link?.name}>
+                    <Link
+                      href={link?.href}
+                      target="_blank"
+                      className=" m-3 overflow-hidden   transition-all w-10 h-10 bg-[#1F2044] hover:bg-[#ffb400] px-1 py-1 rounded-md flex items-center justify-center font-bold"
+                    >
+                      <Image
+                        src={link?.icon}
+                        alt={link?.name}
+                        width="auto"
+                        height="auto"
+                        priority
+                      />
+                    </Link>
+                  </Tooltip>
+                );
+              }
+            })}
+          </div>
+          <div className="flex items-center flex-col xs:flex-row">
+            {marketplace_link?.map((link) => (
+              <Tooltip key={link?.id} message={link?.name}>
+                <Link
+                  href={link?.href}
+                  target="_blank"
+                  className=" m-3 overflow-hidden hover:bg-[#ffb400] transition-all w-20 h-10 px-1 bg-slate-100 rounded-md flex items-center justify-center font-bold"
+                >
+                  <Image
+                    src={link?.icon}
+                    alt={link?.name}
+                    width="auto"
+                    height="auto"
+                    priority
+                  />
+                </Link>
+              </Tooltip>
+            ))}
+          </div>
         </div>
       </div>
       {/* copyright section */}

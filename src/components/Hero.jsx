@@ -6,7 +6,7 @@ import Img from "../assets/image/img.png";
 
 export default function Hero() {
   return (
-    <section id="home" className=" md:py-10 2xl:w-[1330px] 2xl:mx-auto">
+    <section id="home" className=" py-10 2xl:w-[1330px] 2xl:mx-auto">
       <div className=" px-2 md:flex md:items-end md:px-8 md:gap-x-6 lg:gap-x-40 lg:justify-between xl:gap-x-56 2xl:gap-x-80 2xl:pt-16">
         <div className=" whitespace-break-spaces ">
           <h1 className=" font-semibold text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl ">{`Hello, I'm Md. Kabir uddin`}</h1>
