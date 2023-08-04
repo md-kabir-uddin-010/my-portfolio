@@ -55,7 +55,7 @@ export default function Form() {
       <form onSubmit={handleSubmit(onSubmit)} noValidate>
         <div className="my-2 md:my-5">
           <input
-            className=" w-full px-2 py-2 text-gray-950 placeholder:text-gray-900 rounded-md outline-none"
+            className="bg-slate-200 w-full px-2 py-2 text-gray-950 placeholder:text-gray-900 rounded-md outline-none"
             type={"text"}
             name={"name"}
             placeholder={"Your name"}
@@ -67,7 +67,7 @@ export default function Form() {
         </div>
         <div className="my-2 md:my-5">
           <input
-            className=" w-full px-2 py-2 text-gray-950 placeholder:text-gray-900 rounded-md outline-none"
+            className="bg-slate-200 w-full px-2 py-2 text-gray-950 placeholder:text-gray-900 rounded-md outline-none"
             type={"email"}
             name={"email"}
             placeholder={"Your email"}
@@ -79,7 +79,7 @@ export default function Form() {
         </div>
         <div className="my-2">
           <textarea
-            className=" w-full min-h-[100px] max-h-44 px-2 py-2 text-gray-950 placeholder:text-gray-900 rounded-md outline-none"
+            className=" bg-slate-200 w-full min-h-[100px] max-h-44 px-2 py-2 text-gray-950 placeholder:text-gray-900 rounded-md outline-none"
             name={"message"}
             placeholder={"Your message"}
             {...register("message")}

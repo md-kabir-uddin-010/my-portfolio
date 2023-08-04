@@ -21,6 +21,9 @@ export default function Skills() {
           <ProgressBar lable={"React JS"} progress={90} />
           <ProgressBar lable={"Next JS"} progress={80} />
           <ProgressBar lable={"Node JS"} progress={80} />
+
+          <ProgressBar lable={"TypeScript"} progress={80} />
+          <ProgressBar lable={"Tailwind CSS"} progress={90} />
         </div>
       </div>
     </section>

@@ -49,11 +49,11 @@ export default function Navbar() {
           <h2 className=" hidden xs:block ml-1">Md. kabir uddin</h2>
         </div>
         {/* likn section */}
-        <div className="">
+        <div className=" ">
           <ul
-            className={`  overflow-hidden w-full ${
+            className={` overflow-hidden w-full ${
               isOpen ? "h-48" : "h-0"
-            } absolute top-[49px] left-0 bg-navbar-primary transition-all duration-300 sm:static sm:flex sm:items-center sm:gap-x-3 sm:h-auto`}
+            } absolute top-[49px] left-0 bg-navbar-primary transition-all duration-300 sm:static sm:top-0 sm:left-0 sm:flex sm:items-center sm:gap-x-3 sm:h-auto`}
           >
             {links?.map((link) => (
               <li key={link?.id} className=" w-full pt-2 text-center">

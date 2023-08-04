@@ -4,7 +4,7 @@ import Divideder from "./common/Divideder";
 
 export default function Projects() {
   return (
-    <section className=" md:py-10 2xl:pt-16 2xl:w-[1330px] 2xl:mx-auto">
+    <section className=" w-full h-full  md:py-10 2xl:pt-16 2xl:w-[1330px] 2xl:mx-auto">
       <div className="md:pt-20 pb-10 px-2 md:px-0 ">
         {/* heading */}
         <div className="">
@@ -19,7 +19,7 @@ export default function Projects() {
           </p>
         </div>
         {/* progress bar  */}
-        <div className="  my-20 grid grid-cols-1 justify-items-center md:grid-cols-2 xl:grid-cols-3 gap-y-8  md:gap-y-12 md:w-[750px] md:mx-auto xl:w-[1250px]">
+        <div className="my-20 grid grid-cols-1 justify-items-center md:grid-cols-2 xl:grid-cols-3 gap-y-8  md:gap-y-12 md:w-[750px] md:mx-auto xl:w-[1250px]">
           {porjects?.map((project) => (
             <Card key={project?.id} project={project} />
           ))}
