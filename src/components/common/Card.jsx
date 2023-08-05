@@ -7,8 +7,9 @@ export default function Card({ project }) {
     <div className=" w-full transition-all msm:w-[350px] msm:mx-auto bg-slate-800 rounded-lg  ">
       <div className=" group ">
         <div className="">
+          <div className=" text-center py-1 capitalize">{name}</div>
           <Image
-            className=" w-full min-h-[200px] rounded-l-md rounded-r-md object-cover  transition-all"
+            className=" w-full min-h-[200px] rounded-l-md rounded-r-md   transition-all"
             src={image}
             width={500}
             height={500}
@@ -26,7 +27,7 @@ export default function Card({ project }) {
                 live
               </Link>
             )}
-            {github && <span className=" mx-2">|</span>}
+            {github && href && <span className=" mx-2">|</span>}
             {github && (
               <Link
                 target="_blank"
