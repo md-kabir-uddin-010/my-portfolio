@@ -1,6 +1,6 @@
-import guru from "../assets/icon/Guru_logo.svg";
 import fiverr from "../assets/icon/fiverr-2.svg";
 import freelancer from "../assets/icon/freelancer.svg";
+import upwork from "../assets/icon/upwork.png";
 
 import discord from "../assets/icon/discord-6.svg";
 import facebook from "../assets/icon/fb-2.svg";
@@ -37,20 +37,20 @@ export const social_link = [
 export const marketplace_link = [
   {
     id: 1,
+    href: "https://www.upwork.com/freelancers/~0112f2d997ec90ed3b",
+    name: "upwork.com",
+    icon: upwork,
+  },
+  {
+    id: 2,
     href: "https://www.fiverr.com/mdkabiruddin010",
     name: "fiverr.com",
     icon: fiverr,
   },
   {
-    id: 2,
+    id: 3,
     href: "https://www.freelancer.com/u/mdkabiruddin010",
     name: "freelancer.com",
     icon: freelancer,
-  },
-  {
-    id: 3,
-    href: "https://www.guru.com/freelancers/md-kabir-uddin-010",
-    name: "guru.com",
-    icon: guru,
   },
 ];
