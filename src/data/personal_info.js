@@ -5,6 +5,6 @@ export const personal_info = {
   nationality: "Bangladeshi",
   address: "Rangpur, Bangladesh",
   phone: "+08801723843781",
-  email: "mdkabiruddin084@gamil.com",
+  email: "mdkabiruddin084@gmail.com",
   freelance: " Available",
 };

@@ -49,7 +49,7 @@ export const marketplace_link = [
   },
   {
     id: 3,
-    href: "https://www.freelancer.com/u/mdkabiruddin010",
+    href: "https://www.freelancer.com/u/mdkabiruddin525",
     name: "freelancer.com",
     icon: freelancer,
   },
